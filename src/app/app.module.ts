@@ -9,12 +9,15 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatInputModule } from '@angular/material/input';
 import { NgxMaskModule, IConfig } from 'ngx-mask';
 import {MatSliderModule} from '@angular/material/slider';
-
+import { InscricaoListComponent } from './components/inscricao-list/inscricao-list.component';
+import {MatTableModule} from '@angular/material/table';
+import { RouterModule } from '@angular/router';
 
 @NgModule({
   declarations: [
     AppComponent,
     InscricaoFormComponent,
+    InscricaoListComponent,
    
   ],
   imports: [
@@ -26,7 +29,8 @@ import {MatSliderModule} from '@angular/material/slider';
     BrowserAnimationsModule,
     MatInputModule,
     NgxMaskModule.forRoot(),
-    MatSliderModule
+    MatSliderModule,
+    MatTableModule
   ],
   providers: [],
   bootstrap: [AppComponent]
