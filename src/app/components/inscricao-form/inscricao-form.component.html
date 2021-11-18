@@ -6,7 +6,7 @@
 
 </div>
 
-<div class="container" style="text-align: center;">
+<div class="container" style="text-align: center;display: flex; flex-direction: column;align-items: center;">
     <h3>Retiro Unidos ADTAG 208</h3>
     <p>
         Data: 10 a 12 de dezembro de 2021.
@@ -21,7 +21,7 @@
     </p>
     <p> Pagamento até: 05/12.</p>
 
-    <form autocomplete="off" [formGroup]="meuFormGroup" (ngSubmit)="submit()"  style="max-width: 600px;">
+    <form autocomplete="off" [formGroup]="meuFormGroup" (ngSubmit)="submit()"  style="max-width: 600px; min-width: 300px;">
 
         <input type="text" style="margin-bottom: 15px;" class="form-control"  formControlName="nome" id="nome"  placeholder="Nome"  />
 
@@ -47,15 +47,23 @@
     <h5 style="color:#808080">INFORMAÇÕES</h5>
     <div style="display: flex;flex-direction: column; margin-bottom: 15px;">
         <a href="https://api.whatsapp.com/send?phone=5561982058736" style="font-size: 20px;color:#808080">Antoniel
-            <img src="assets/images/zap.png" width="25" height="auto"/>
+            <img src="assets/images/zap.png" width="20" height="auto"/>
         </a>
 
         <a href="https://api.whatsapp.com/send?phone=5561991000163" style="font-size: 20px;color:#808080">Gilson
-            <img src="assets/images/zap.png" width="25" height="auto"/>
+            <img src="assets/images/zap.png" width="20" height="auto"/>
         </a>
         
     </div>
-  
+    <hr>
+    <img src="assets/images/adtag.jpg" width="70" height="auto">
+    <p style="color:#808080">ADTAG 208 Santa Maria</p>
+    <p style="color:#808080">Avenida Alagados CL 208</p>
+    <p style="color:#808080">Lotes B1 e B10</p>
+    <p style="color:#808080">Santa Maria - DF</p>
+    <p style="color:#808080">Pr. Dr. Vanilton Vidal</p>
+    <p style="color:#808080">Miss. Ivanilde Vidal</p>
+    
 
 </div>
 
